@@ -1,0 +1,35 @@
+h1= title
+p Welcome to #{title}
+
+.row
+  .span4.well
+    | Hi there!
+
+.container
+  section#trying-it
+    h1.page-header This is it. Trying Jade and Bootstrap.
+
+    h2 Testing navigation tabs
+    ul#mynav.nav.nav-tabs
+      li#nav_home
+        a(href='#home') Home
+      li#nav_foo
+        a(href='#foo') Foo
+      li#nav_bar
+        a(href='#bar') Bar
+
+    h2 Testing grid layout
+
+    .row
+      .span8
+        form.form-horizontal
+          .control-group
+            label Username
+            .controls
+              input(id='name', type='text', placeholder='Type something')
+              p.help-block Associated help text!
+
+      .span4
+        h3 Let's talk about this
+        p On the left is a Bootstrap-styled form!
+
